@@ -637,8 +637,8 @@ def create_app(env=os.environ):
 
         scheduler = Scheduler()
 
-        minutes = random.randrange(10)
-        tens_of_minutes = random.randrange(3)
+        # minutes = random.randrange(10)
+        # tens_of_minutes = random.randrange(3)
         # somewhere between 08:00 and 08:29 based on randomness above
         # job_time = "08:{0}{1}".format(tens_of_minutes, minutes)
         job_time = "12:40"
