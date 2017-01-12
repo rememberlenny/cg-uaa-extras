@@ -641,7 +641,7 @@ def create_app(env=os.environ):
         tens_of_minutes = random.randrange(3)
         # somewhere between 08:00 and 08:29 based on randomness above
         # job_time = "08:{0}{1}".format(tens_of_minutes, minutes)
-        job_time = "12:30"
+        job_time = "12:40"
         scheduler.every().day.at(job_time).do(expiration_job)
         schedThread = scheduler.daemon_thread(event=threadEvent)
         schedThread.start()
